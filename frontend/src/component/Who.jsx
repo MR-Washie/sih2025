@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Who() {
   return (
@@ -14,22 +15,28 @@ export default function Who() {
       {/* Options */}
       <div className="flex flex-col md:flex-row gap-6">
         {/* Student */}
+        <Link to="/studentLogin" >
         <button className="bg-blue-600 text-white px-8 py-6 rounded-lg shadow hover:bg-blue-700 transition flex flex-col items-center">
           <span className="text-2xl font-semibold mb-2">🎓</span>
           <span className="text-lg font-medium">Student</span>
         </button>
+        </Link>
 
         {/* Faculty */}
+        <Link to="/facultyLogin">
         <button className="bg-green-600 text-white px-8 py-6 rounded-lg shadow hover:bg-green-700 transition flex flex-col items-center">
           <span className="text-2xl font-semibold mb-2">👩‍🏫</span>
           <span className="text-lg font-medium">Faculty</span>
         </button>
+        </Link>
 
         {/* College */}
+        <Link to="/collegeLogin">
         <button className="bg-purple-600 text-white px-8 py-6 rounded-lg shadow hover:bg-purple-700 transition flex flex-col items-center">
           <span className="text-2xl font-semibold mb-2">🏫</span>
           <span className="text-lg font-medium">College</span>
         </button>
+        </Link>
       </div>
     </div>
   );
