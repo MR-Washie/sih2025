@@ -14,7 +14,7 @@ const FacultyLoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:4000/api/facultyLogin", formData);
+    axios.post("https://sih2025-yfx2.onrender.com/api/facultyLogin", formData);
     navigate("/facultyDashboard");
     console.log("Faculty Login Data:", formData);
   };
