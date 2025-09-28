@@ -3,7 +3,7 @@ import { CalendarDays, ClipboardPlus, Upload, Bell, X, BookCopy, PlusCircle } fr
 
 // --- MOCK DATA (Updated with Batch and Room Info) ---
 const facultyData = {
-  name: 'Dr. Sharma',
+  name: 'Dr. Abhimanyu',
   profilePic: 'https://i.pravatar.cc/150?u=drsharma',
   subjects: [ 
     { name: 'Data Structures', code: 'CS-301' },

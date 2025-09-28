@@ -3,7 +3,7 @@ import { CalendarDays, ClipboardCheck, BookOpen, Bell, ChevronRight, FolderKanba
 
 // --- MOCK DATA (Replace with your API data later) ---
 const studentData = {
-  name: 'Anjali',
+  name: 'Ragib',
   profilePic: 'https://i.pravatar.cc/150?u=anjali', // Placeholder image
 };
 

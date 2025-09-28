@@ -110,7 +110,7 @@ export default function Navbar() {
       <div className="md:hidden">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-white focus:outline-none"
+          className="text-gray-800 hover:text-blue-600 focus:outline-none transition-colors duration-200"
         >
           {isMenuOpen ? (
             <HiX size={28} />
