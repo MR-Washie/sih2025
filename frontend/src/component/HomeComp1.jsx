@@ -20,7 +20,10 @@ export default function AnalyticsSection() {
 
           {/* Feature highlights */}
           <div className="grid grid-cols-3 gap-6 text-center">
-            <div className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <div 
+              className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition cursor-pointer"
+              onClick={() => navigate('/who')}
+            >
               <Users className="w-8 h-8 mx-auto text-blue-600 mb-2" />
               <p className="text-gray-800 font-bold text-md">Attendance</p>
             </div>
@@ -32,7 +35,10 @@ export default function AnalyticsSection() {
               <p className="font-bold text-md text-gray-800">Create Timetable</p>
               
             </div>
-            <div className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <div 
+              className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition cursor-pointer"
+              onClick={() => navigate('/who')}
+            >
               <BarChart3 className="w-8 h-8 mx-auto text-indigo-600 mb-2" />
               <p className=" text-gray-800 font-bold text-md">Utilization</p>
             </div>
