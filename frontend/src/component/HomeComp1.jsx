@@ -1,7 +1,9 @@
 import React from "react";
 import { BarChart3, Users, Clock } from "lucide-react"; // icons
+import { useNavigate } from "react-router-dom";
 
 export default function AnalyticsSection() {
+  const navigate = useNavigate();
   return (
     <section className="relative bg-gray-50 py-24">
       <div className="container mx-auto px-6 grid md:grid-cols-2 items-center gap-16">
@@ -22,9 +24,13 @@ export default function AnalyticsSection() {
               <Users className="w-8 h-8 mx-auto text-blue-600 mb-2" />
               <p className="text-gray-800 font-bold text-md">Attendance</p>
             </div>
-            <div className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <div 
+              className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition cursor-pointer"
+              onClick={() => navigate('/who')}
+            >
               <Clock className="w-8 h-8 mx-auto text-purple-600 mb-2" />
               <p className="font-bold text-md text-gray-800">Create Timetable</p>
+              
             </div>
             <div className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">
               <BarChart3 className="w-8 h-8 mx-auto text-indigo-600 mb-2" />
@@ -32,7 +38,10 @@ export default function AnalyticsSection() {
             </div>
           </div>
 
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-10 py-4 rounded-full text-lg shadow-xl hover:scale-105 transition-transform duration-300">
+          <button 
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-10 py-4 rounded-full text-lg shadow-xl hover:scale-105 transition-transform duration-300 cursor-pointer"
+            onClick={() => navigate('/who')}
+          >
             Classroom
           </button>
         </div>
